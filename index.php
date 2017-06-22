@@ -8,17 +8,17 @@
         <script type="text/javascript" src="js/calendar.js"></script>
     </head>
     <body>
-    <div class="main-container">
-        <div class="calendar-container">
-            <div class="top calendar-full-info">
-                <div class="year"><?= $today['year'];?></div>
-                <div class="full-info">
-                    <span class="week-day"><?= substr($today['weekday'],0,3);?>, </span><span class="mount-day"><?= substr($today['month'],0,3);?> </span><span class="day"><?= $today['mday'];?></span>
+        <div class="main-container">
+            <div class="calendar-container" data-themecolor="#189fda">
+                <div class="top calendar-full-info" data-boxtextcolor="white">
+                    <div class="year"><?= $today['year'];?></div>
+                    <div class="full-info">
+                        <span class="week-day"><?= substr($today['weekday'],0,3);?>, </span><span class="mount-day"><?= substr($today['month'],0,3);?> </span><span class="day"><?= $today['mday'];?></span>
+                    </div>
                 </div>
+                <div class="calendar" data-textColor="white"></div>
             </div>
-            <div class="calendar"></div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-    </div>
     </body>
 </html>

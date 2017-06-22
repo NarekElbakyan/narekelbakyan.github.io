@@ -2,6 +2,7 @@ body {
   display: table;
   width: 100%;
   height: 100%;
+  font-family: $FiraSans;
   .main-container {
     max-width: 1600px;
     width: 83.3%;
@@ -17,21 +18,19 @@ body {
     margin: 0 auto;
     .top {
       padding: 21px 38px 27px;
-      background-color: #189fda;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       .year {
         font-size: 23px;
         font-weight: 500;
         text-align: left;
-        color: rgba(255, 255, 255, 0.7);
+        opacity: 0.7;
         margin-bottom: 5px;
       }
       .full-info {
         font-size: 49px;
         font-weight: 500;
         text-align: left;
-        color: #ffffff;
       }
     }
     .calendar {
@@ -42,7 +41,7 @@ body {
         font-size: 20px;
         font-weight: 500;
         text-align: center;
-        color: rgba(255, 255, 255, 0.87);
+        opacity: 0.87;
         margin-bottom: 26px;
         position: relative;
 
@@ -79,7 +78,7 @@ body {
             font-weight: 500;
             text-align: center;
             display: inline-block;
-            color: rgba(255, 255, 255, 0.6);
+            opacity: 0.6;
             width: 58px;
             height: auto;
             line-height: inherit;
@@ -96,7 +95,7 @@ body {
           font-size: 20px;
           font-weight: 400;
           text-align: center;
-          color: rgba(255, 255, 255, 0.87);
+          opacity: 0.87;
           line-height: 58px;
           cursor: pointer;
           -webkit-touch-callout: none;

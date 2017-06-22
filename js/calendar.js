@@ -218,6 +218,20 @@ $(function () {
             $('.calendar-container .calendar-full-info .day').text(ClickedDay);
         }
     });
+
+});
+
+$(document).ready(function () {
+    var globalColor = $('.calendar-container .calendar').data('textcolor');
+    $('.calendar-container .calendar').css('color' , globalColor);
+
+
+    var themeColor = $('.calendar-container ').data('themecolor');
+    $('.calendar-container .top').css('background-color' , themeColor);
+
+
+    var topBoxTextColor = $('.calendar-container .top ').data('boxtextcolor');
+    $('.calendar-container .top').css('color' , topBoxTextColor);
 });
 
 
