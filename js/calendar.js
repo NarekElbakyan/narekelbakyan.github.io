@@ -36,8 +36,6 @@ $(function () {
         var twoDigitDate = fullDate.getDate()+"";if(twoDigitDate.length==1)	twoDigitDate="0" +twoDigitDate;
 
 
-
-
         var twoDigitMonth = fullDate.getMonth();
 
         if (shift > startingDay) {
