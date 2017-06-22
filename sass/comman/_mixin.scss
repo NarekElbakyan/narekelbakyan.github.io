@@ -1,0 +1,60 @@
+@mixin opacity($value) {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=$value);
+
+  /* Netscape */
+  -moz-opacity: $value;
+
+  /* Safari 1.x */
+  -khtml-opacity: $value;
+
+  /* Good browsers */
+  opacity: $value;
+}
+
+@mixin border($size, $color) {
+  border: $size solid $color;
+}
+
+//responsive mixin
+@mixin responsive($device) {
+  @if $device == mobile-device{
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  @if $device == mobile-big{
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  }
+  @if $device == tablet{
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $device == big-tablet{
+    @media only screen and (max-width: 960px) {
+      @content;
+    }
+  }
+  @if $device == tab-portrait{
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $device == tab-landscape{
+    @media only screen and (max-width: 1190px) {
+      @content;
+    }
+  }
+  @if $device == big-desktop{
+    @media only screen and (max-width: 1290px) {
+      @content;
+    }
+  }
+}
